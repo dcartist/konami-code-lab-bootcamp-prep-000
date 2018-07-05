@@ -12,14 +12,14 @@ const codes = [
 ];
 
 var enteredCode = []//Code that's entered
-var theBodyTag = document.querySelector("body")//Selecting the Body tag 
+var theBodyTag = document.querySelector("body")//Selecting the Body tag
 var correctCodeInput = 0 //How many code inputs was entered correctly
 function init() {
 	// your code here
 	theBodyTag.addEventListener('keydown',function(event){ //adds listener to the body tag
 		//checking for correct code entered when it's enough to check to see if is correct
 		if (enteredCode.length === 10){ //checks to see if the code that was entered was 10 keypresses
-			for(var i = 0; i<enteredCode.length;i++){
+			for(var i = 0; i<enteredCode.length;i++){ //Begins the check on the code is entered
 				if (enteredCode[i] == codes[i]){
 					correctCodeInput = correctCodeInput + 1
 					// console.log(enteredCode[i]+" is correct")
