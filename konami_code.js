@@ -10,7 +10,7 @@ const codes = [
 	"b",
 	"a"
 ];
-
+//KONAMI CODE IS 10 keydowns entered 
 var enteredCode = []//Code that's entered
 var theBodyTag = document.querySelector("body")//Selecting the Body tag
 var correctCodeInput = 0 //How many code inputs was entered correctly
@@ -25,11 +25,11 @@ function init() {
 					// console.log(enteredCode[i]+" is correct")
 				} else{
 					enteredCode.length = 0 //clears the code if entered incorrect
-					correctCodeInput = 0 //clears the entire correct count 
+					correctCodeInput = 0 //clears the entire correct count
 					// console.log("incorrect code")
 				}
 			} //end for loop to check for correct code
-			while (correctCodeInput == 10){
+			while (correctCodeInput == 10){ //this activates if correct code count equals 10 which is the same amount for konami
 				// console.log ("correct code")
 				alert("Hurray!")
 				correctCodeInput = 0
