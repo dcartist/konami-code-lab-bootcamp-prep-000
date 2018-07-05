@@ -20,12 +20,12 @@ function init() {
 		//checking for correct code entered when it's enough to check to see if is correct
 		if (enteredCode.length === 10){ //checks to see if the code that was entered was 10 keypresses
 			for(var i = 0; i<enteredCode.length;i++){ //Begins the check on the code is entered
-				if (enteredCode[i] == codes[i]){
-					correctCodeInput = correctCodeInput + 1
+				if (enteredCode[i] == codes[i]){ //if the code entered matches the konami code
+					correctCodeInput = correctCodeInput + 1 //adds to the count of correct code that was inputed
 					// console.log(enteredCode[i]+" is correct")
 				} else{
 					enteredCode.length = 0 //clears the code if entered incorrect
-					correctCodeInput = 0
+					correctCodeInput = 0 //clears the entire correct count 
 					// console.log("incorrect code")
 				}
 			} //end for loop to check for correct code
