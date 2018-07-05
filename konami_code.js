@@ -37,7 +37,7 @@ function init() {
 			}
 		}else {
 			enteredCode.push(event.key) //pushes entered Code into an array (enteredCode)
-			console.log(enteredCode)
+			// console.log(enteredCode)
 		}
 	})
 }
