@@ -31,7 +31,7 @@ function init() {
 			} //end for loop to check for correct code
 			while (correctCodeInput == 10){ //this activates if correct code count equals 10 which is the same amount for konami
 				// console.log ("correct code")
-				alert("Hurray!")
+				alert("Hurray!")//alert is notified when it's correct
 				correctCodeInput = 0
 				enteredCode.length = 0
 			}
