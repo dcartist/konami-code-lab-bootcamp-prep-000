@@ -12,7 +12,7 @@ const codes = [
 ];
 
 var enteredCode = []//Code that's entered
-var theBodyTag = document.querySelector("body")
+var theBodyTag = document.querySelector("body")//Selecting the Body tag 
 var correctCodeInput = 0 //How many code inputs was entered correctly
 function init() {
 	// your code here
